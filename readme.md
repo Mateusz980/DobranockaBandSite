@@ -12,4 +12,4 @@ My first project for the DobraNocka music band
 
 ## Activity
 
-To visit my website please follow the link : https://zespoldobranocka.netlify.app/
+To visit my website please follow the link : https://mateusz980.github.io/DobranockaBand.github.io/
