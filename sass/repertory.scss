@@ -1,0 +1,139 @@
+@import "variables";
+@import "main";
+@import "mixins";
+@import "media-queries";
+
+.repertory {
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: "Kalam", cursive;
+  letter-spacing: 1px;
+  font-size: 20px;
+  @include min-width_550 {
+    font-size: 25px;
+  }
+  @include min-width_1024 {
+    font-size: 28px;
+  }
+  @include min-width_1500 {
+    font-size: 32px;
+  }
+}
+.container-rep {
+  display: flex;
+  justify-content: center;
+}
+
+.search-input {
+  display: inline-block;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 220px;
+  height: 20px;
+  border-radius: 30px;
+  @include min-width_1024 {
+    width: 250px;
+    margin: 20px 0px;
+  }
+  @include min-width_1366 {
+    margin: 40px 0px 60px 0px;
+  }
+}
+
+input {
+  display: block;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 220px;
+  padding: 2px 10px;
+  line-height: 20px;
+  outline: 0;
+  border: 0;
+  font-size: 16px;
+  border-radius: 30px;
+  background-color: transparent;
+  border: 2px solid black;
+  transition: all 250ms ease-in-out;
+  @include min-width_1024 {
+    width: 250px;
+    padding: 5px 15px;
+    font-size: 20px;
+  }
+  @include min-width_1500 {
+    font-size: 22px;
+  }
+  &:focus {
+    outline: 0;
+    border: 1px solid transparent;
+    border-bottom: 2px solid black;
+    border-radius: 0;
+  }
+  &::placeholder {
+    font-size: 16px;
+    color: black;
+  }
+}
+
+.fa-search {
+  position: absolute;
+  top: 50%;
+  right: 7%;
+  transform: translateY(-50%);
+  font-size: 14px;
+  color: #07051a;
+}
+
+.answer {
+  font-weight: bold;
+}
+
+.search-engine-error {
+  display: none;
+}
+
+.active-rep {
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+  @include min-width_1366 {
+    font-size: 20px;
+  }
+  @include min-width_1500 {
+    font-size: 22px;
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+.container-ul {
+  margin-top: 25px;
+  list-style: none;
+  @include min-width_1366 {
+    font-size: 20px;
+    line-height: 150%;
+    margin-top: 40px;
+  }
+  @include min-width_1500 {
+    font-size: 22px;
+  }
+}
+
+.feast {
+  margin-top: 10px;
+}
+
+.box-rep {
+  min-height: 100vh;
+  padding: 30px 5px 100px 10px;
+  background-color: $color-light-green;
+}
+
+footer {
+  margin-top: 0;
+}

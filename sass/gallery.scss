@@ -1,0 +1,29 @@
+@import "variables";
+@import "main";
+@import "mixins";
+@import "media-queries";
+
+.images-container {
+  --gap: 16px;
+  column-count: 1;
+  column-gap: var(--gap);
+  padding: var(--gap);
+  list-style: none;
+  margin: 0 5px;
+  @include min_width_1024 {
+    --gap: 23px;
+    column-count: 3;
+    margin: 0 20px;
+    min-height: 70vh;
+  }
+  @include min_width_1500 {
+    margin: 0 30px;
+  }
+}
+
+.img-with-gallery {
+  display: block;
+  width: 100%;
+  margin-bottom: var(--gap);
+  box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.8);
+}

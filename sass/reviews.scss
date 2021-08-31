@@ -1,0 +1,121 @@
+@import "variables";
+@import "main";
+@import "mixins";
+@import "media-queries";
+
+.testimonials {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  @include min-width_1366 {
+    margin-top: 90px;
+  }
+}
+
+.testimonials-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 20px;
+  width: 475px;
+  transform: translateX(-100vw);
+  padding: 10px 20px;
+  box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.1);
+  overflow-x: hidden;
+  background-color: $color-white;
+  animation: motion 0.5s linear both;
+  @include min-width_1024 {
+    width: 400px;
+  }
+  @include min-width_1366 {
+    padding: 8px 20px;
+  }
+  @include min-width_1500 {
+    width: 450px;
+    margin: 15px 25px;
+  }
+}
+
+.testimonials-container:nth-of-type(2) {
+  animation-delay: 0.6s;
+}
+
+.testimonials-container:nth-of-type(3) {
+  animation-delay: 1.2s;
+}
+
+.testimonials-container:nth-of-type(4) {
+  animation-delay: 1.8s;
+}
+
+.testimonials-container:nth-child(5) {
+  animation-delay: 2.4s;
+}
+
+.testimonials-container:nth-child(6) {
+  animation-delay: 3s;
+}
+
+.testimonials-container:nth-child(7) {
+  animation-delay: 3.6s;
+}
+
+.testimonials-container:nth-child(8) {
+  animation-delay: 4.2s;
+}
+
+.testimonials-container:nth-child(9) {
+  animation-delay: 4.8s;
+}
+
+.testimonials-container:nth-child(10) {
+  animation-delay: 5.4s;
+}
+
+.testimonials-container:nth-child(11) {
+  animation-delay: 6s;
+}
+
+.testimonials-container:nth-child(12) {
+  animation-delay: 6.6s;
+}
+
+.review {
+  text-align: center;
+  font-family: "Kalam", cursive;
+  font-size: 17px;
+  @include min-width_1024 {
+    font-size: 23px;
+  }
+}
+
+.container-top {
+  margin-bottom: 10px;
+  align-items: center;
+  .fa-user-circle {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5px;
+    font-size: 30px;
+    @include min-width_1024 {
+      font-size: 50px;
+    }
+  }
+}
+
+.name-user {
+  display: flex;
+  justify-content: center;
+  font-size: 19px;
+  font-weight: 700;
+  @include min-width_1024 {
+    font-size: 27px;
+  }
+}
+
+@keyframes motion {
+  100% {
+    transform: translateX(0);
+  }
+}
