@@ -324,12 +324,12 @@ nav {
 }
 
 .social-media-icons i {
-  font-size: 18px;
+  font-size: 19px;
 }
 
 @media (min-width: 550px) {
   .social-media-icons i {
-    font-size: 24px;
+    font-size: 25px;
   }
 }
 
@@ -396,7 +396,7 @@ footer {
   justify-content: space-around;
   align-items: center;
   margin-top: 30px;
-  height: 0px;
+  height: 90px;
   padding: 5px 0;
   background-color: rgba(0, 0, 0, 0.8);
   color: #fff;
