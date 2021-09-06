@@ -52,7 +52,7 @@ input {
 
 .img-logo {
   width: 70px;
-  margin-left: 6%;
+  margin-left: 4%;
 }
 
 @media (min-width: 550px) {
@@ -70,6 +70,7 @@ input {
 @media (min-width: 1366px) {
   .img-logo {
     width: 160px;
+    margin-left: 25%;
   }
 }
 
@@ -621,6 +622,12 @@ footer .copyright {
 
 .fa-phone {
   animation: jump 5s linear infinite;
+}
+
+@media (orientation: landscape) and (max-width: 1023px) {
+  .contact {
+    height: 120vh;
+  }
 }
 
 @keyframes jump {

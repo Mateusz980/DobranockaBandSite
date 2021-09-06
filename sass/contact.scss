@@ -117,6 +117,12 @@
   animation: jump 5s linear infinite;
 }
 
+@media (orientation: landscape) and (max-width: 1023px) {
+  .contact {
+    height: 120vh;
+  }
+}
+
 @keyframes jump {
   0% {
     transform: translateX(0);

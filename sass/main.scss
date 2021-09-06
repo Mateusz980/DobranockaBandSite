@@ -55,6 +55,7 @@ input {
   }
   @include min-width_1366 {
     width: 160px;
+    margin-left: 25%;
   }
   @include min-width_1500 {
     width: 180px;
