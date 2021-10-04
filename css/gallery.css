@@ -461,210 +461,37 @@ footer .copyright {
   }
 }
 
-.contact {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 50vh;
-  width: 100%;
-  background-color: #87a58c;
-  color: #fff;
+main {
+  background-image: url("../assets/akordeonista_Przemek-min (3).jpg");
+}
+
+.images-container {
+  --gap: 16px;
+  column-count: 1;
+  column-gap: var(--gap);
+  padding: var(--gap);
+  list-style: none;
+  margin: 0 5px;
 }
 
 @media (min-width: 1024px) {
-  .contact {
-    height: 65vh;
-    width: 80%;
-    margin: 0 auto;
+  .images-container {
+    --gap: 23px;
+    column-count: 3;
+    margin: 0 20px;
+    min-height: 70vh;
   }
 }
 
 @media (min-width: 1500px) {
-  .contact {
-    height: 70vh;
-    width: 70%;
+  .images-container {
+    margin: 0 30px;
   }
 }
 
-.section-contact {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  font-size: 20px;
-}
-
-.section-contact a {
+.img-with-gallery {
   display: block;
-  margin: 10px 0;
-  text-decoration: none;
-  color: #fff;
-}
-
-.section-contact a:hover {
-  color: #3e5f35;
-}
-
-@media (min-width: 550px) {
-  .section-contact a {
-    font-size: 30px;
-  }
-}
-
-@media (min-width: 1024px) {
-  .section-contact a {
-    font-size: 40px;
-    margin: 15px 0;
-  }
-}
-
-@media (min-width: 1500px) {
-  .section-contact a {
-    margin: 25px 0;
-  }
-}
-
-.adress {
-  margin: 4px 0px;
-}
-
-@media (min-width: 550px) {
-  .adress {
-    font-size: 30px;
-  }
-}
-
-@media (min-width: 1024px) {
-  .adress {
-    font-size: 40px;
-  }
-}
-
-@media (min-width: 1500px) {
-  .adress {
-    margin: 10px 0px;
-  }
-}
-
-.name-address {
-  font-size: 25px;
-  text-transform: uppercase;
-  margin-bottom: 20px;
-  letter-spacing: 3px;
-  border-bottom: 5px solid #fff;
-}
-
-@media (min-width: 550px) {
-  .name-address {
-    font-size: 35px;
-    margin-bottom: 40px;
-  }
-}
-
-@media (min-width: 1024px) {
-  .name-address {
-    font-size: 50px;
-    margin-bottom: 50px;
-  }
-}
-
-@media (min-width: 1500px) {
-  .name-address {
-    margin-bottom: 60px;
-  }
-}
-
-.map {
-  position: relative;
-  bottom: 0px;
-  left: 0px;
   width: 100%;
-  margin-bottom: 50px;
-}
-
-@media (min-width: 1024px) {
-  .map {
-    margin-bottom: 50px;
-  }
-}
-
-@media (min-width: 1366px) {
-  .map {
-    margin-bottom: 80px;
-  }
-}
-
-.map iframe {
-  display: block;
-  height: 100%;
-  width: 100%;
-}
-
-@media (min-width: 550px) {
-  .map iframe {
-    height: 20vh;
-  }
-}
-
-@media (min-width: 1024px) {
-  .map iframe {
-    height: 30vh;
-    width: 80%;
-    margin: 0 auto;
-  }
-}
-
-@media (min-width: 1500px) {
-  .map iframe {
-    width: 70%;
-  }
-}
-
-.fa-phone {
-  animation: jump 5s linear infinite;
-}
-
-@media (orientation: landscape) and (max-width: 1023px) {
-  .contact {
-    height: 120vh;
-  }
-}
-
-@keyframes jump {
-  0% {
-    transform: translateX(0);
-  }
-  90% {
-    transform: translateX(0);
-  }
-  91% {
-    transform: translateX(8px);
-  }
-  92% {
-    transform: translateX(-8px);
-  }
-  93% {
-    transform: translateX(8px);
-  }
-  94% {
-    transform: translateX(-8px);
-  }
-  95% {
-    transform: translateX(8px);
-  }
-  96% {
-    transform: translateX(-8px);
-  }
-  97% {
-    transform: translateX(8px);
-  }
-  98% {
-    transform: translateX(-8px);
-  }
-  99% {
-    transform: translateX(8px);
-  }
-  100% {
-    transform: translateX(0);
-  }
+  margin-bottom: var(--gap);
+  box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.8);
 }

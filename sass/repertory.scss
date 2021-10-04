@@ -5,7 +5,6 @@
 
 .repertory {
   text-align: center;
-  margin-bottom: 30px;
   font-family: "Kalam", cursive;
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -15,9 +14,20 @@
   }
   @include min-width_1024 {
     font-size: 28px;
+    margin-bottom: 10px;
   }
   @include min-width_1500 {
     font-size: 32px;
+  }
+}
+.repertory-text-bottom {
+  font-size: 16px;
+  font-weight: 400;
+  padding: 10px;
+  text-align: center;
+  margin-bottom: 15px;
+  @include min-width_1024 {
+    font-size: 22px;
   }
 }
 .container-rep {

@@ -462,6 +462,10 @@ footer .copyright {
   }
 }
 
+main {
+  background-image: url("../assets/akordeonista_Przemek-min (3).jpg");
+}
+
 .box-top {
   margin: 0 auto -20px auto;
   text-align: center;

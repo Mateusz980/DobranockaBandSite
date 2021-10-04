@@ -461,174 +461,214 @@ footer .copyright {
   }
 }
 
-.repertory {
-  text-align: center;
-  margin-bottom: 30px;
-  font-family: "Kalam", cursive;
-  text-transform: uppercase;
-  letter-spacing: 2px;
+main {
+  background-image: url("../assets/akordeonista_Przemek-min (3).jpg");
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  width: 100%;
+  background-color: #87a58c;
+  color: #fff;
+}
+
+@media (min-width: 1024px) {
+  .contact {
+    height: 65vh;
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 1500px) {
+  .contact {
+    height: 70vh;
+    width: 70%;
+  }
+}
+
+.section-contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   font-size: 20px;
 }
 
+.section-contact a {
+  display: block;
+  margin: 10px 0;
+  text-decoration: none;
+  color: #fff;
+}
+
+.section-contact a:hover {
+  color: #3e5f35;
+}
+
 @media (min-width: 550px) {
-  .repertory {
-    font-size: 25px;
+  .section-contact a {
+    font-size: 30px;
   }
 }
 
 @media (min-width: 1024px) {
-  .repertory {
-    font-size: 28px;
+  .section-contact a {
+    font-size: 40px;
+    margin: 15px 0;
   }
 }
 
 @media (min-width: 1500px) {
-  .repertory {
-    font-size: 32px;
+  .section-contact a {
+    margin: 25px 0;
   }
 }
 
-.container-rep {
-  display: flex;
-  justify-content: center;
+.adress {
+  margin: 4px 0px;
 }
 
-.search-input {
-  display: inline-block;
+@media (min-width: 550px) {
+  .adress {
+    font-size: 30px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .adress {
+    font-size: 40px;
+  }
+}
+
+@media (min-width: 1500px) {
+  .adress {
+    margin: 10px 0px;
+  }
+}
+
+.name-address {
+  font-size: 25px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  letter-spacing: 3px;
+  border-bottom: 5px solid #fff;
+}
+
+@media (min-width: 550px) {
+  .name-address {
+    font-size: 35px;
+    margin-bottom: 40px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .name-address {
+    font-size: 50px;
+    margin-bottom: 50px;
+  }
+}
+
+@media (min-width: 1500px) {
+  .name-address {
+    margin-bottom: 60px;
+  }
+}
+
+.map {
   position: relative;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 220px;
-  height: 20px;
-  border-radius: 30px;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  margin-bottom: 50px;
 }
 
 @media (min-width: 1024px) {
-  .search-input {
-    width: 250px;
-    margin: 20px 0px;
+  .map {
+    margin-bottom: 50px;
   }
 }
 
 @media (min-width: 1366px) {
-  .search-input {
-    margin: 40px 0px 60px 0px;
+  .map {
+    margin-bottom: 80px;
   }
 }
 
-input {
+.map iframe {
   display: block;
-  position: relative;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 220px;
-  padding: 2px 10px;
-  line-height: 20px;
-  outline: 0;
-  border: 0;
-  font-size: 16px;
-  border-radius: 30px;
-  background-color: transparent;
-  border: 2px solid black;
-  transition: all 250ms ease-in-out;
+  height: 100%;
+  width: 100%;
+}
+
+@media (min-width: 550px) {
+  .map iframe {
+    height: 20vh;
+  }
 }
 
 @media (min-width: 1024px) {
-  input {
-    width: 250px;
-    padding: 5px 15px;
-    font-size: 20px;
+  .map iframe {
+    height: 30vh;
+    width: 80%;
+    margin: 0 auto;
   }
 }
 
 @media (min-width: 1500px) {
-  input {
-    font-size: 22px;
+  .map iframe {
+    width: 70%;
   }
 }
 
-input:focus {
-  outline: 0;
-  border: 1px solid transparent;
-  border-bottom: 2px solid black;
-  border-radius: 0;
+.fa-phone {
+  animation: jump 5s linear infinite;
 }
 
-input::placeholder {
-  font-size: 16px;
-  color: black;
-}
-
-.fa-search {
-  position: absolute;
-  top: 50%;
-  right: 7%;
-  transform: translateY(-50%);
-  font-size: 14px;
-  color: #07051a;
-}
-
-.answer {
-  font-weight: bold;
-}
-
-.search-engine-error {
-  display: none;
-}
-
-.active-rep {
-  display: block;
-  text-align: center;
-  margin-top: 20px;
-}
-
-@media (min-width: 1366px) {
-  .active-rep {
-    font-size: 20px;
+@media (orientation: landscape) and (max-width: 1023px) {
+  .contact {
+    height: 120vh;
   }
 }
 
-@media (min-width: 1500px) {
-  .active-rep {
-    font-size: 22px;
+@keyframes jump {
+  0% {
+    transform: translateX(0);
   }
-}
-
-.hidden {
-  display: none;
-}
-
-.container-ul {
-  margin-top: 25px;
-  list-style: none;
-}
-
-@media (min-width: 1366px) {
-  .container-ul {
-    font-size: 20px;
-    line-height: 150%;
-    margin-top: 40px;
+  90% {
+    transform: translateX(0);
   }
-}
-
-@media (min-width: 1500px) {
-  .container-ul {
-    font-size: 22px;
+  91% {
+    transform: translateX(8px);
   }
-}
-
-.feast {
-  margin-top: 10px;
-}
-
-.box-rep {
-  min-height: 100vh;
-  padding: 30px 5px 100px 10px;
-  background-color: rgba(203, 219, 197, 0.7);
-}
-
-footer {
-  margin-top: 0;
+  92% {
+    transform: translateX(-8px);
+  }
+  93% {
+    transform: translateX(8px);
+  }
+  94% {
+    transform: translateX(-8px);
+  }
+  95% {
+    transform: translateX(8px);
+  }
+  96% {
+    transform: translateX(-8px);
+  }
+  97% {
+    transform: translateX(8px);
+  }
+  98% {
+    transform: translateX(-8px);
+  }
+  99% {
+    transform: translateX(8px);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
