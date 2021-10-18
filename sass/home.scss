@@ -4,9 +4,6 @@
 @import "main";
 @import url("https://fonts.googleapis.com/css2?family=PT+Serif&display=swap");
 
-.fb-customer-chat {
-  width: 10%;
-}
 .box-top {
   margin: 0 auto -20px auto;
   text-align: center;
@@ -60,7 +57,7 @@
   }
   .call-now_a {
     margin-left: 5px;
-    color: #3e5f35;
+    color: $color-dark-green;
     text-decoration: none;
     font-weight: 700;
     @include min-width_550 {
