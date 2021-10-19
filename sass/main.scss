@@ -17,7 +17,7 @@ input {
   overflow-x: hidden;
 }
 
-.container-header {
+header {
   display: flex;
   height: 100%;
   justify-content: space-between;
@@ -298,7 +298,3 @@ footer {
     padding: 10px 0;
   }
 }
-
-// main {
-//   background-image: url("../assets/akordeonista_Przemek-min\ \(3\).jpg");
-// }

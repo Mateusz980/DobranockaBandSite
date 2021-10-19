@@ -15,7 +15,7 @@ input {
   overflow-x: hidden;
 }
 
-.container-header {
+header {
   display: flex;
   height: 100%;
   justify-content: space-between;
